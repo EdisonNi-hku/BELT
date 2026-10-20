@@ -1,0 +1,2 @@
+# Provenance hashes cover exact bytes, including historical CRLF in CSV exports.
+* -text

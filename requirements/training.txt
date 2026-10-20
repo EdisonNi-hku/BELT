@@ -1,0 +1,13 @@
+# Additional imports of the captured BELT training/runtime code.
+# Install alongside the appropriate backbone's archived GPU stack.
+# These ranges describe import requirements, not a historical full environment lock.
+numpy>=1.24,<3
+datasets>=3,<5
+huggingface-hub>=0.30,<1
+omegaconf>=2.3,<3
+PyYAML>=6,<7
+safetensors>=0.5,<1
+scikit-learn>=1.5,<2
+scipy>=1.13,<2
+# Optional experiment logging only; the paper code imports it lazily.
+wandb>=0.19,<1

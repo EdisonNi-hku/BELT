@@ -1,0 +1,9 @@
+# Third-party source notice
+
+`uncertainty4reasoning-native-thinking/` contains only the runtime subset needed by BELT's frozen generation contract and the Qwen3 step-head loader. Each included file is byte-preserved from the tracked adaptation in `llm-reasoning-rl-with-uhead` commit `3148548dd1d0181d21ffbca70f7044e8b2ce53c9`; hashes are in `provenance/code_sources.json`. The source snapshot's original `uncertainty4reasoning-native-thinking.SOURCE.md` is preserved alongside this directory. Its source commit/tree and redaction history refer to the larger original snapshot, not to this subset's directory hash.
+
+The paper names the public architecture reference **ReProbe/ReProbe**, revision `fac0c16da74d55f71cc9fa469cc08e88c9604ee4`. The public repository's recursive tree at that revision contained no LICENSE file when inspected on 17 October 2026. The native-thinking snapshot also declares that no top-level upstream license was present. No license or redistribution grant is inferred or supplied here. This is a local review artifact; resolve upstream permissions before distributing these files externally, or obtain the matching runtime separately and point `U4R_NATIVE_ROOT` at it.
+
+The adaptation includes the executed step-head architecture and native generation helpers; it is not represented as an unmodified checkout of public ReProbe. No estimator/inference tooling that depends on `lm_polygraph`, dataset files, training scripts, credentials, or model weights are included in this subset. Only `AutoUncertaintyHead` is used by the BELT runtime.
+
+The baseline adaptations under `rl_controller/baselines/rom/` and `rl_controller/baselines/trainingfree/vendor/code_stop/` retain their own LICENSE and PROVENANCE files. Those notices apply to their respective code, not to the native-thinking subset.

@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "belt"
+version = "0.2.0"
+description = "BELT: belief-based termination for early stopping in LLM reasoning"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["rl_controller*", "scripts*"]
+exclude = ["scripts.source_variants*"]
+namespaces = true

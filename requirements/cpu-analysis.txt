@@ -1,0 +1,3 @@
+# Additional dependencies for captured NumPy-based policy replay/agent readings.
+# This is a lightweight analysis environment, not an archived GPU environment lock.
+numpy>=1.24,<3

@@ -1,0 +1,5 @@
+# Versions stated for Qwen3 generation in the released paper protocol.
+# Install torch 2.7.0+cu126 from the CUDA 12.6 PyTorch index first (see RECIPES).
+torch==2.7.0
+transformers==4.52.4
+vllm==0.9.0.1

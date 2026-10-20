@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+.venv-download/
+.venv-replay/
+checkpoints/
+*.egg-info/
+build/
+dist/
+*.aux
+*.log
+*.out
+*.synctex.gz

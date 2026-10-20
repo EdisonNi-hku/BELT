@@ -1,0 +1,1285 @@
+{
+  "schema": "belt-published-checkpoints/v1",
+  "trained_checkpoints": 42,
+  "checkpoint_bytes": 35798226996,
+  "validation_files": 42,
+  "repositories": [
+    {
+      "schema": "belt-checkpoints/v1",
+      "repository": "JingweiNi/BELT-Qwen3-1.7B-ReProbeInit",
+      "method": "BELT",
+      "backbone": "Qwen/Qwen3-1.7B",
+      "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "checkpoints": [
+        {
+          "source": "/iopsstor/scratch/cscs/jni/runs/two_belief/targets_fb/qall-c8-s0-tq+v+r+stability-fb",
+          "directory": "seed-0",
+          "seed": 0,
+          "role": "ReProbe-initialized BELT; corrected-label fb; recommended for Qwen H-R",
+          "expected_sha256": "a14b5b5e527ce71ff9a90e167ae7251238da983dc5ed9e37f5e27d891d0829cd",
+          "scoring_receipt": "/iopsstor/scratch/cscs/jni/runs/belt_ext/valscore_fb/3539122/lane3/math_ood_report/summary.json",
+          "checkpoint": "seed-0/s1_best.pt",
+          "sha256": "a14b5b5e527ce71ff9a90e167ae7251238da983dc5ed9e37f5e27d891d0829cd",
+          "bytes": 63847272,
+          "selected_epoch": null,
+          "backbone": "Qwen/Qwen3-1.7B",
+          "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+          "validation_scores": {
+            "path": "seed-0/val_scored.jsonl",
+            "sha256": "6e1b9ce1aab4ea71fd8613b40c01ace686c9f9e4422ba24e74a52121d1adfc2b",
+            "bytes": 17426257,
+            "rows": 2554,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/iopsstor/scratch/cscs/jni/runs/two_belief/targets_fb/qall-c8-s1-tq+v+r+stability-fb",
+          "directory": "seed-1",
+          "seed": 1,
+          "role": "ReProbe-initialized BELT; corrected-label fb; recommended for Qwen H-R",
+          "expected_sha256": "3cc8e145032e87fa1278e703ea477a1f9b8ea783217ecc7a6b67194a7e973dd0",
+          "scoring_receipt": "/iopsstor/scratch/cscs/jni/runs/belt_ext/valscore_fb/d22_ctrl12/lane1/math_ood_report/summary.json",
+          "checkpoint": "seed-1/s1_best.pt",
+          "sha256": "3cc8e145032e87fa1278e703ea477a1f9b8ea783217ecc7a6b67194a7e973dd0",
+          "bytes": 63847272,
+          "selected_epoch": null,
+          "backbone": "Qwen/Qwen3-1.7B",
+          "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+          "validation_scores": {
+            "path": "seed-1/val_scored.jsonl",
+            "sha256": "700c07079f43b3560a1bd7a4b502200809e7a28baf038e13b80c15ce8efb98d8",
+            "bytes": 17419291,
+            "rows": 2554,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/iopsstor/scratch/cscs/jni/runs/two_belief/targets_fb/qall-c8-s2-tq+v+r+stability-fb",
+          "directory": "seed-2",
+          "seed": 2,
+          "role": "ReProbe-initialized BELT; corrected-label fb; recommended for Qwen H-R",
+          "expected_sha256": "3170461de8a2846fe1cca751ba13972da0a698ec83a3f9c49fd8c088a6258615",
+          "scoring_receipt": "/iopsstor/scratch/cscs/jni/runs/belt_ext/valscore_fb/d22_ctrl12/lane2/math_ood_report/summary.json",
+          "checkpoint": "seed-2/s1_best.pt",
+          "sha256": "3170461de8a2846fe1cca751ba13972da0a698ec83a3f9c49fd8c088a6258615",
+          "bytes": 63847272,
+          "selected_epoch": null,
+          "backbone": "Qwen/Qwen3-1.7B",
+          "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+          "validation_scores": {
+            "path": "seed-2/val_scored.jsonl",
+            "sha256": "e526ce5e5bf9ec357f9c00d1003feb2fc2931544771bdec171766224e2ddccee",
+            "bytes": 17415118,
+            "rows": 2554,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        }
+      ],
+      "additional_assets": [
+        {
+          "source": "/iopsstor/scratch/cscs/jni/uncertainty4reasoning/gen_data/qwen3_1p7b_dapo_reprobe_seed20260730/training_compact_b8_ga4/seed_42/block_layer16/2026-08-02/21-20-13/resume_checkpoint/best_uhead/weights.pth",
+          "destination": "reader-template/weights.pth",
+          "sha256": "9fc317cdd6f1bf1b44abd02e1248a10875d78827df92209dec39c216cecfea8e",
+          "bytes": 63833134
+        },
+        {
+          "source": "/iopsstor/scratch/cscs/jni/uncertainty4reasoning/gen_data/qwen3_1p7b_dapo_reprobe_seed20260730/training_compact_b8_ga4/seed_42/block_layer16/2026-08-02/21-20-13/resume_checkpoint/best_uhead/config.yaml",
+          "destination": "reader-template/config.yaml",
+          "sha256": "bef9144e4db96c9380f110dc3eac07492787b324e44015ce179adf6b46d03225",
+          "bytes": 216
+        },
+        {
+          "source": "/iopsstor/scratch/cscs/jni/runs/belt_ext/valscore_fb/3539122/lane3/math_ood_report/summary.json",
+          "destination": "seed-0/scoring_receipt.json",
+          "sha256": "ffdab15bc2a2bcb622735d2e1fa8a54d18c9f40d0c6727d2e602ad91901994b6",
+          "bytes": 3898
+        },
+        {
+          "source": "/iopsstor/scratch/cscs/jni/runs/belt_ext/valscore_fb/d22_ctrl12/lane1/math_ood_report/summary.json",
+          "destination": "seed-1/scoring_receipt.json",
+          "sha256": "3d3f76107d560c487192ec104ae6af9c03e30cfedca3bf5980ba3aff9e62657a",
+          "bytes": 3898
+        },
+        {
+          "source": "/iopsstor/scratch/cscs/jni/runs/belt_ext/valscore_fb/d22_ctrl12/lane2/math_ood_report/summary.json",
+          "destination": "seed-2/scoring_receipt.json",
+          "sha256": "16ec4d935f870be19001b560c128e9e3a770d291e0286d564cf0880c9e51f447",
+          "bytes": 3898
+        }
+      ],
+      "hub_revision": "1ccc94337a9672dee94f79bc3c3a98a2f994220b",
+      "url": "https://huggingface.co/JingweiNi/BELT-Qwen3-1.7B-ReProbeInit",
+      "verification": {
+        "public_anonymous_access": true,
+        "checkpoint_lfs_hashes": 3,
+        "validation_lfs_hashes": 3,
+        "small_metadata_hashes": 11,
+        "method": "Anonymous Hub metadata and downloaded metadata SHA256 comparison"
+      }
+    },
+    {
+      "schema": "belt-checkpoints/v1",
+      "repository": "JingweiNi/BELT-Qwen3-1.7B",
+      "method": "BELT",
+      "backbone": "Qwen/Qwen3-1.7B",
+      "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "checkpoints": [
+        {
+          "source": "/iopsstor/scratch/cscs/jni/runs/two_belief/targets_fb/qall-c8-s0-tq+v+r+stability-fb-ri",
+          "directory": "seed-0",
+          "seed": 0,
+          "role": "BELT primary",
+          "expected_sha256": "ef0efb23afa73a2882706c1ef3277da13e0803bcf49255388ffaf5c8e4da4474",
+          "checkpoint": "seed-0/s1_best.pt",
+          "sha256": "ef0efb23afa73a2882706c1ef3277da13e0803bcf49255388ffaf5c8e4da4474",
+          "bytes": 63847272,
+          "selected_epoch": null,
+          "backbone": "Qwen/Qwen3-1.7B",
+          "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+          "validation_scores": {
+            "path": "seed-0/val_scored.jsonl",
+            "sha256": "659157d05bfb9e7eefe8d85b3925a9158cc639ff0cc0d66416c2fe7eb893f0f7",
+            "bytes": 17381021,
+            "rows": 2554,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/iopsstor/scratch/cscs/jni/runs/two_belief/targets_fb/qall-c8-s1-tq+v+r+stability-fb-ri",
+          "directory": "seed-1",
+          "seed": 1,
+          "role": "BELT primary",
+          "expected_sha256": "2013a17f7ebc0e3313df4e8815382009627064d29d1bbe97df03a4b173d59f7d",
+          "checkpoint": "seed-1/s1_best.pt",
+          "sha256": "2013a17f7ebc0e3313df4e8815382009627064d29d1bbe97df03a4b173d59f7d",
+          "bytes": 63847272,
+          "selected_epoch": null,
+          "backbone": "Qwen/Qwen3-1.7B",
+          "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+          "validation_scores": {
+            "path": "seed-1/val_scored.jsonl",
+            "sha256": "70b5b5c8ab26c59b03f8b4b255162fc802607571b124446a5befe1808aa13748",
+            "bytes": 17427200,
+            "rows": 2554,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/iopsstor/scratch/cscs/jni/runs/two_belief/targets_fb/qall-c8-s2-tq+v+r+stability-fb-ri",
+          "directory": "seed-2",
+          "seed": 2,
+          "role": "BELT primary",
+          "expected_sha256": "d595fb20408d3b05495235b38a270bbc9c6a9e37c7b5ce3f73962893095b4835",
+          "checkpoint": "seed-2/s1_best.pt",
+          "sha256": "d595fb20408d3b05495235b38a270bbc9c6a9e37c7b5ce3f73962893095b4835",
+          "bytes": 63847272,
+          "selected_epoch": null,
+          "backbone": "Qwen/Qwen3-1.7B",
+          "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+          "validation_scores": {
+            "path": "seed-2/val_scored.jsonl",
+            "sha256": "3f6eccfce93729f8d053398546103fdf0e148a5410927b8129829cf680b6f01b",
+            "bytes": 17381361,
+            "rows": 2554,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        }
+      ],
+      "additional_assets": [
+        {
+          "source": "/iopsstor/scratch/cscs/jni/uncertainty4reasoning/gen_data/qwen3_1p7b_dapo_reprobe_seed20260730/training_compact_b8_ga4/seed_42/block_layer16/2026-08-02/21-20-13/resume_checkpoint/best_uhead/weights.pth",
+          "destination": "reader-template/weights.pth",
+          "sha256": "9fc317cdd6f1bf1b44abd02e1248a10875d78827df92209dec39c216cecfea8e",
+          "bytes": 63833134
+        },
+        {
+          "source": "/iopsstor/scratch/cscs/jni/uncertainty4reasoning/gen_data/qwen3_1p7b_dapo_reprobe_seed20260730/training_compact_b8_ga4/seed_42/block_layer16/2026-08-02/21-20-13/resume_checkpoint/best_uhead/config.yaml",
+          "destination": "reader-template/config.yaml",
+          "sha256": "bef9144e4db96c9380f110dc3eac07492787b324e44015ce179adf6b46d03225",
+          "bytes": 216
+        }
+      ],
+      "hub_revision": "15d1c4d82b13b47f3aaaa403687cf88d91d8052f",
+      "url": "https://huggingface.co/JingweiNi/BELT-Qwen3-1.7B",
+      "verification": {
+        "public_anonymous_access": true,
+        "checkpoint_lfs_hashes": 3,
+        "validation_lfs_hashes": 3,
+        "small_metadata_hashes": 8,
+        "method": "Anonymous Hub metadata and downloaded metadata SHA256 comparison"
+      }
+    },
+    {
+      "schema": "belt-checkpoints/v1",
+      "repository": "JingweiNi/BELT-OLMo-3-7B-Think",
+      "method": "BELT",
+      "backbone": "allenai/Olmo-3-7B-Think",
+      "revision": "d97e442d7cc678210054dbcc9b440894d62c89a4",
+      "checkpoints": [
+        {
+          "source": "/iopsstor/scratch/cscs/jni/olmo3_rep/runs/s2_fb/reader-seed0-fb",
+          "directory": "seed-0",
+          "seed": 0,
+          "role": "BELT primary",
+          "expected_sha256": "fc0c55180878f976266da28b6a2e7f2fcff686e45ed3ad50d6e03b9c6194e9cf",
+          "checkpoint": "seed-0/s1_best.pt",
+          "sha256": "fc0c55180878f976266da28b6a2e7f2fcff686e45ed3ad50d6e03b9c6194e9cf",
+          "bytes": 76431653,
+          "selected_epoch": null,
+          "backbone": "allenai/Olmo-3-7B-Think",
+          "revision": "d97e442d7cc678210054dbcc9b440894d62c89a4",
+          "validation_scores": {
+            "path": "seed-0/val_scored.jsonl",
+            "sha256": "9e2a03979306efda7848d167b2e7fea01d8cb88ca6c64d767cf53456681cae0c",
+            "bytes": 14673593,
+            "rows": 1278,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/iopsstor/scratch/cscs/jni/olmo3_rep/runs/s2_fb/reader-seed1-fb",
+          "directory": "seed-1",
+          "seed": 1,
+          "role": "BELT primary",
+          "expected_sha256": "6dae3e3b4b96520752a73d43f5ad4ded25e50166c999e3c9049300c14caf094c",
+          "checkpoint": "seed-1/s1_best.pt",
+          "sha256": "6dae3e3b4b96520752a73d43f5ad4ded25e50166c999e3c9049300c14caf094c",
+          "bytes": 76431653,
+          "selected_epoch": null,
+          "backbone": "allenai/Olmo-3-7B-Think",
+          "revision": "d97e442d7cc678210054dbcc9b440894d62c89a4",
+          "validation_scores": {
+            "path": "seed-1/val_scored.jsonl",
+            "sha256": "989333aa79e035eee62774b11f1e27324fe61d9e60c5ab74dfaacc642b19ffe0",
+            "bytes": 14730026,
+            "rows": 1278,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/iopsstor/scratch/cscs/jni/olmo3_rep/runs/s2_fb/reader-seed2-fb",
+          "directory": "seed-2",
+          "seed": 2,
+          "role": "BELT primary",
+          "expected_sha256": "6a1a003ec3af7ce3df6423915727fd758b1158889ebd0208f2ad894877e763ac",
+          "checkpoint": "seed-2/s1_best.pt",
+          "sha256": "6a1a003ec3af7ce3df6423915727fd758b1158889ebd0208f2ad894877e763ac",
+          "bytes": 76431653,
+          "selected_epoch": null,
+          "backbone": "allenai/Olmo-3-7B-Think",
+          "revision": "d97e442d7cc678210054dbcc9b440894d62c89a4",
+          "validation_scores": {
+            "path": "seed-2/val_scored.jsonl",
+            "sha256": "0752fae990d83e3cb6c95f6aa8f04c19f51cf666b0ec56a7e0189aaa4b050c5e",
+            "bytes": 14646409,
+            "rows": 1278,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        }
+      ],
+      "additional_assets": [],
+      "hub_revision": "338da37f4b859a6583f4d5a079f9c929db3066e7",
+      "url": "https://huggingface.co/JingweiNi/BELT-OLMo-3-7B-Think",
+      "verification": {
+        "public_anonymous_access": true,
+        "checkpoint_lfs_hashes": 3,
+        "validation_lfs_hashes": 3,
+        "small_metadata_hashes": 7,
+        "method": "Anonymous Hub metadata and downloaded metadata SHA256 comparison"
+      }
+    },
+    {
+      "schema": "belt-checkpoints/v1",
+      "repository": "JingweiNi/OSP-Qwen3-1.7B",
+      "method": "OSP",
+      "backbone": "Qwen/Qwen3-1.7B",
+      "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "checkpoints": [
+        {
+          "source": "/iopsstor/scratch/cscs/jni/runs/two_belief/oalign_fb/lam2e-6_s0-fb",
+          "directory": "lambda-2e-6/seed-0",
+          "seed": 0,
+          "role": "OSP full-grid",
+          "price": 2e-06,
+          "expected_sha256": "74e6b2da37c221b74314dc5274e45f75c0774ba5ab613f0020e2d8f9c136c9cb",
+          "checkpoint": "lambda-2e-6/seed-0/osp_best.pt",
+          "sha256": "74e6b2da37c221b74314dc5274e45f75c0774ba5ab613f0020e2d8f9c136c9cb",
+          "bytes": 402713653,
+          "selected_epoch": {
+            "epoch": 4,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": 6,
+            "value": -0.5633279611098565
+          },
+          "backbone": "Qwen/Qwen3-1.7B",
+          "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+          "validation_scores": {
+            "path": "lambda-2e-6/seed-0/val_scored.jsonl",
+            "sha256": "2cc07bb839f760e7a73262b0358ff320cf12dbc1fd86ec092642b9935a4f242d",
+            "bytes": 13825579,
+            "rows": 2554,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/iopsstor/scratch/cscs/jni/runs/two_belief/oalign_fb/lam2e-6_s1-fb",
+          "directory": "lambda-2e-6/seed-1",
+          "seed": 1,
+          "role": "OSP full-grid",
+          "price": 2e-06,
+          "expected_sha256": "66c3204db9c02cc177a8d3cfd05437e24b80ec10d5b6b8b1417c2afccadc14c5",
+          "checkpoint": "lambda-2e-6/seed-1/osp_best.pt",
+          "sha256": "66c3204db9c02cc177a8d3cfd05437e24b80ec10d5b6b8b1417c2afccadc14c5",
+          "bytes": 402713653,
+          "selected_epoch": {
+            "epoch": 4,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": 6,
+            "value": -0.5625228767343247
+          },
+          "backbone": "Qwen/Qwen3-1.7B",
+          "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+          "validation_scores": {
+            "path": "lambda-2e-6/seed-1/val_scored.jsonl",
+            "sha256": "bd656270a21b818d9b4be2f6bd3074ebae0010a7cd74255a65f23dc21b8e20af",
+            "bytes": 13771067,
+            "rows": 2554,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/iopsstor/scratch/cscs/jni/runs/two_belief/oalign_fb/lam2e-6_s2-fb",
+          "directory": "lambda-2e-6/seed-2",
+          "seed": 2,
+          "role": "OSP full-grid",
+          "price": 2e-06,
+          "expected_sha256": "4ab10ea1d1a4b142cb85c2ff7d918f9acdee21880ecfebffa62ce83e99b6b14b",
+          "checkpoint": "lambda-2e-6/seed-2/osp_best.pt",
+          "sha256": "4ab10ea1d1a4b142cb85c2ff7d918f9acdee21880ecfebffa62ce83e99b6b14b",
+          "bytes": 402713653,
+          "selected_epoch": {
+            "epoch": 4,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": 6,
+            "value": -0.5698255112501078
+          },
+          "backbone": "Qwen/Qwen3-1.7B",
+          "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+          "validation_scores": {
+            "path": "lambda-2e-6/seed-2/val_scored.jsonl",
+            "sha256": "eda6d109c3a70d4080aa14d901b667954a05d56dfdea96cb1a2dd94cf4a4d548",
+            "bytes": 13819405,
+            "rows": 2554,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/iopsstor/scratch/cscs/jni/runs/two_belief/oalign_fb/lam5e-6_s0-fb",
+          "directory": "lambda-5e-6/seed-0",
+          "seed": 0,
+          "role": "OSP full-grid",
+          "price": 5e-06,
+          "expected_sha256": "6a3974f15d4a818cdbd3f0904964c294fcc8c6a2e9f380e38b0f67d40dce711a",
+          "checkpoint": "lambda-5e-6/seed-0/osp_best.pt",
+          "sha256": "6a3974f15d4a818cdbd3f0904964c294fcc8c6a2e9f380e38b0f67d40dce711a",
+          "bytes": 402713653,
+          "selected_epoch": {
+            "epoch": 4,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": 6,
+            "value": -0.5372907634638177
+          },
+          "backbone": "Qwen/Qwen3-1.7B",
+          "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+          "validation_scores": {
+            "path": "lambda-5e-6/seed-0/val_scored.jsonl",
+            "sha256": "0180e7fea1b3085a52cd06e4011558e583a3c826d631bfe2acfb2f53180c0787",
+            "bytes": 13749997,
+            "rows": 2554,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/iopsstor/scratch/cscs/jni/runs/two_belief/oalign_fb/lam5e-6_s1-fb",
+          "directory": "lambda-5e-6/seed-1",
+          "seed": 1,
+          "role": "OSP full-grid",
+          "price": 5e-06,
+          "expected_sha256": "e5acbdfcb55c3b21512461a692bb8d020b9b95c51537dfafc169e2b7a0e524e4",
+          "checkpoint": "lambda-5e-6/seed-1/osp_best.pt",
+          "sha256": "e5acbdfcb55c3b21512461a692bb8d020b9b95c51537dfafc169e2b7a0e524e4",
+          "bytes": 402713653,
+          "selected_epoch": {
+            "epoch": 7,
+            "floor": 4,
+            "n_eligible_epochs": 4,
+            "n_history_epochs": 8,
+            "stopped_at": null,
+            "value": -0.519073937666818
+          },
+          "backbone": "Qwen/Qwen3-1.7B",
+          "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+          "validation_scores": {
+            "path": "lambda-5e-6/seed-1/val_scored.jsonl",
+            "sha256": "84e840e7313699edb6f567fa01de0a73d1190230b028c45a690a33ed499b00a8",
+            "bytes": 13750481,
+            "rows": 2554,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/iopsstor/scratch/cscs/jni/runs/two_belief/oalign_fb/lam5e-6_s2-fb",
+          "directory": "lambda-5e-6/seed-2",
+          "seed": 2,
+          "role": "OSP full-grid",
+          "price": 5e-06,
+          "expected_sha256": "28c3524b91320edf0ce66c9e8f31011cdd36145b70976b3ca2d2b8556196334e",
+          "checkpoint": "lambda-5e-6/seed-2/osp_best.pt",
+          "sha256": "28c3524b91320edf0ce66c9e8f31011cdd36145b70976b3ca2d2b8556196334e",
+          "bytes": 402713653,
+          "selected_epoch": {
+            "epoch": 4,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": 6,
+            "value": -0.517456950929498
+          },
+          "backbone": "Qwen/Qwen3-1.7B",
+          "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+          "validation_scores": {
+            "path": "lambda-5e-6/seed-2/val_scored.jsonl",
+            "sha256": "979db8ec59a5523adec9aa2e817e468e16766e0cc86969aa7a56a6e92ae641dc",
+            "bytes": 13692373,
+            "rows": 2554,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/iopsstor/scratch/cscs/jni/runs/two_belief/oalign_fb/lam1e-5_s0-fb",
+          "directory": "lambda-1e-5/seed-0",
+          "seed": 0,
+          "role": "OSP full-grid",
+          "price": 1e-05,
+          "expected_sha256": "8d5f6c78c56e561a9fb3830c4969ff1f20cb23caa9a064755e0610e79a9b29f3",
+          "checkpoint": "lambda-1e-5/seed-0/osp_best.pt",
+          "sha256": "8d5f6c78c56e561a9fb3830c4969ff1f20cb23caa9a064755e0610e79a9b29f3",
+          "bytes": 402713653,
+          "selected_epoch": {
+            "epoch": 4,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": 6,
+            "value": -0.4853459663151092
+          },
+          "backbone": "Qwen/Qwen3-1.7B",
+          "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+          "validation_scores": {
+            "path": "lambda-1e-5/seed-0/val_scored.jsonl",
+            "sha256": "e86f90689829aee6e89d5dfc5abceadd0ef60c9bbe69abc8235efe202dec9a49",
+            "bytes": 13687999,
+            "rows": 2554,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/iopsstor/scratch/cscs/jni/runs/two_belief/oalign_fb/lam1e-5_s1-fb",
+          "directory": "lambda-1e-5/seed-1",
+          "seed": 1,
+          "role": "OSP full-grid",
+          "price": 1e-05,
+          "expected_sha256": "e1c97850efecd520c4a1612549e0ce5a3e6b5d75e8877e05960d1e0b85172828",
+          "checkpoint": "lambda-1e-5/seed-1/osp_best.pt",
+          "sha256": "e1c97850efecd520c4a1612549e0ce5a3e6b5d75e8877e05960d1e0b85172828",
+          "bytes": 402713653,
+          "selected_epoch": {
+            "epoch": 4,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": 6,
+            "value": -0.45278374163544033
+          },
+          "backbone": "Qwen/Qwen3-1.7B",
+          "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+          "validation_scores": {
+            "path": "lambda-1e-5/seed-1/val_scored.jsonl",
+            "sha256": "ad15adea54bdec67b8595ccaf95d3cefba5b09dd114320e634cd9ef780a8b985",
+            "bytes": 13647797,
+            "rows": 2554,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/iopsstor/scratch/cscs/jni/runs/two_belief/oalign_fb/lam1e-5_s2-fb",
+          "directory": "lambda-1e-5/seed-2",
+          "seed": 2,
+          "role": "OSP full-grid",
+          "price": 1e-05,
+          "expected_sha256": "0eee2e81600be6b2ac6e207dc61d3f09b07b94bbc0848a07a76013ed91e31541",
+          "checkpoint": "lambda-1e-5/seed-2/osp_best.pt",
+          "sha256": "0eee2e81600be6b2ac6e207dc61d3f09b07b94bbc0848a07a76013ed91e31541",
+          "bytes": 402713653,
+          "selected_epoch": {
+            "epoch": 4,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": 6,
+            "value": -0.4525015816918338
+          },
+          "backbone": "Qwen/Qwen3-1.7B",
+          "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+          "validation_scores": {
+            "path": "lambda-1e-5/seed-2/val_scored.jsonl",
+            "sha256": "d3b44d4c97af3162fde1db22339ef0963d4022a6e344a71c5412b42cfae100c8",
+            "bytes": 13667993,
+            "rows": 2554,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/iopsstor/scratch/cscs/jni/runs/two_belief/oalign_fb/lam2e-5_s0-fb",
+          "directory": "lambda-2e-5/seed-0",
+          "seed": 0,
+          "role": "OSP full-grid",
+          "price": 2e-05,
+          "expected_sha256": "d536eb6c9c0c94f70159475512dbe0802ba9661845a7f3a2f8521d2d1d194c0f",
+          "checkpoint": "lambda-2e-5/seed-0/osp_best.pt",
+          "sha256": "d536eb6c9c0c94f70159475512dbe0802ba9661845a7f3a2f8521d2d1d194c0f",
+          "bytes": 402713653,
+          "selected_epoch": {
+            "epoch": 4,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": 6,
+            "value": -0.4153385077828881
+          },
+          "backbone": "Qwen/Qwen3-1.7B",
+          "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+          "validation_scores": {
+            "path": "lambda-2e-5/seed-0/val_scored.jsonl",
+            "sha256": "29676a36af162d4be1c668282d1547fa691895d021d180d708ec3cea3249f829",
+            "bytes": 13586415,
+            "rows": 2554,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/iopsstor/scratch/cscs/jni/runs/two_belief/oalign_fb/lam2e-5_s1-fb",
+          "directory": "lambda-2e-5/seed-1",
+          "seed": 1,
+          "role": "OSP full-grid",
+          "price": 2e-05,
+          "expected_sha256": "9f6c6deb72098c76851db50a7ee91ea3239e83d0794a27203417a7c908e0bfa3",
+          "checkpoint": "lambda-2e-5/seed-1/osp_best.pt",
+          "sha256": "9f6c6deb72098c76851db50a7ee91ea3239e83d0794a27203417a7c908e0bfa3",
+          "bytes": 402713653,
+          "selected_epoch": {
+            "epoch": 6,
+            "floor": 4,
+            "n_eligible_epochs": 4,
+            "n_history_epochs": 8,
+            "stopped_at": null,
+            "value": -0.42049010017428756
+          },
+          "backbone": "Qwen/Qwen3-1.7B",
+          "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+          "validation_scores": {
+            "path": "lambda-2e-5/seed-1/val_scored.jsonl",
+            "sha256": "20e617ab36ddbbe6005b5c336e773242750c54944f5917c30babc19eabac716e",
+            "bytes": 13601619,
+            "rows": 2554,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/iopsstor/scratch/cscs/jni/runs/two_belief/oalign_fb/lam2e-5_s2-fb",
+          "directory": "lambda-2e-5/seed-2",
+          "seed": 2,
+          "role": "OSP full-grid",
+          "price": 2e-05,
+          "expected_sha256": "920a12ab11fd1fad0b4cc19412fb2764abec57f8dda94f100e21148866d90213",
+          "checkpoint": "lambda-2e-5/seed-2/osp_best.pt",
+          "sha256": "920a12ab11fd1fad0b4cc19412fb2764abec57f8dda94f100e21148866d90213",
+          "bytes": 402713653,
+          "selected_epoch": {
+            "epoch": 7,
+            "floor": 4,
+            "n_eligible_epochs": 4,
+            "n_history_epochs": 8,
+            "stopped_at": null,
+            "value": -0.4189154457526257
+          },
+          "backbone": "Qwen/Qwen3-1.7B",
+          "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+          "validation_scores": {
+            "path": "lambda-2e-5/seed-2/val_scored.jsonl",
+            "sha256": "8ebd1e1cd1122370c0b75e4fad5f4e05d70af6b0a63837c6e346b9afaf89a0bb",
+            "bytes": 13634183,
+            "rows": 2554,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/iopsstor/scratch/cscs/jni/runs/two_belief/oalign_fb/lam4e-5_s0-fb",
+          "directory": "lambda-4e-5/seed-0",
+          "seed": 0,
+          "role": "OSP full-grid",
+          "price": 4e-05,
+          "expected_sha256": "3ce61ca7def127f2a66777fbb66282df8380e96228bcb1259812916829fd317e",
+          "checkpoint": "lambda-4e-5/seed-0/osp_best.pt",
+          "sha256": "3ce61ca7def127f2a66777fbb66282df8380e96228bcb1259812916829fd317e",
+          "bytes": 402713653,
+          "selected_epoch": {
+            "epoch": 4,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": 6,
+            "value": -0.36994357244020437
+          },
+          "backbone": "Qwen/Qwen3-1.7B",
+          "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+          "validation_scores": {
+            "path": "lambda-4e-5/seed-0/val_scored.jsonl",
+            "sha256": "1fe90e194e8724229c0ebf67dffdf5ab40e32db8022eb87648b6300805128f30",
+            "bytes": 13546809,
+            "rows": 2554,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/iopsstor/scratch/cscs/jni/runs/two_belief/oalign_fb/lam4e-5_s1-fb",
+          "directory": "lambda-4e-5/seed-1",
+          "seed": 1,
+          "role": "OSP full-grid",
+          "price": 4e-05,
+          "expected_sha256": "41ec34f9e9b70c249d23f564b41c927d001e3781db5e02c91bbe62ef6195d836",
+          "checkpoint": "lambda-4e-5/seed-1/osp_best.pt",
+          "sha256": "41ec34f9e9b70c249d23f564b41c927d001e3781db5e02c91bbe62ef6195d836",
+          "bytes": 402713653,
+          "selected_epoch": {
+            "epoch": 6,
+            "floor": 4,
+            "n_eligible_epochs": 4,
+            "n_history_epochs": 8,
+            "stopped_at": null,
+            "value": -0.3654844584417534
+          },
+          "backbone": "Qwen/Qwen3-1.7B",
+          "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+          "validation_scores": {
+            "path": "lambda-4e-5/seed-1/val_scored.jsonl",
+            "sha256": "fd0530bada4b9b73ecd62e05c02cd06755f65b4e259e9e44e0034cc8af557e67",
+            "bytes": 13532225,
+            "rows": 2554,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/iopsstor/scratch/cscs/jni/runs/two_belief/oalign_fb/lam4e-5_s2-fb",
+          "directory": "lambda-4e-5/seed-2",
+          "seed": 2,
+          "role": "OSP full-grid",
+          "price": 4e-05,
+          "expected_sha256": "6a332d4178add7636c935f5abf384a09b7bebadce8f6f829d5c07cefd552dcde",
+          "checkpoint": "lambda-4e-5/seed-2/osp_best.pt",
+          "sha256": "6a332d4178add7636c935f5abf384a09b7bebadce8f6f829d5c07cefd552dcde",
+          "bytes": 402713653,
+          "selected_epoch": {
+            "epoch": 7,
+            "floor": 4,
+            "n_eligible_epochs": 4,
+            "n_history_epochs": 8,
+            "stopped_at": null,
+            "value": -0.35630929794967664
+          },
+          "backbone": "Qwen/Qwen3-1.7B",
+          "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+          "validation_scores": {
+            "path": "lambda-4e-5/seed-2/val_scored.jsonl",
+            "sha256": "23cff8ba1089f8a3745a5379bef41c9ab020bc9a19626308b287dd5abc808e07",
+            "bytes": 13600839,
+            "rows": 2554,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        }
+      ],
+      "additional_assets": [],
+      "hub_revision": "6aa1a5b7c0bd8c9069676a2928b8e909f7cfc73e",
+      "url": "https://huggingface.co/JingweiNi/OSP-Qwen3-1.7B",
+      "verification": {
+        "public_anonymous_access": true,
+        "checkpoint_lfs_hashes": 15,
+        "validation_lfs_hashes": 15,
+        "small_metadata_hashes": 31,
+        "method": "Anonymous Hub metadata and downloaded metadata SHA256 comparison"
+      }
+    },
+    {
+      "schema": "belt-checkpoints/v1",
+      "repository": "JingweiNi/OSP-OLMo-3-7B-Think",
+      "method": "OSP",
+      "backbone": "allenai/Olmo-3-7B-Think",
+      "revision": "d97e442d7cc678210054dbcc9b440894d62c89a4",
+      "checkpoints": [
+        {
+          "source": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb/osp-lam2e-6-s0-fb",
+          "directory": "lambda-2e-6/seed-0",
+          "seed": 0,
+          "role": "OSP full-grid",
+          "price": 2e-06,
+          "scoring_receipt": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb_ext74/osp-lam2e-6-s0-fb/summary.json",
+          "expected_sha256": "b47661aa619c1fe9144ef9474ab5f4a110f99f1899d0acb14aa098b299548b58",
+          "checkpoint": "lambda-2e-6/seed-0/osp_best.pt",
+          "sha256": "b47661aa619c1fe9144ef9474ab5f4a110f99f1899d0acb14aa098b299548b58",
+          "bytes": 1619174645,
+          "selected_epoch": {
+            "epoch": 5,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": null,
+            "value": -0.6935973757621431
+          },
+          "backbone": "allenai/Olmo-3-7B-Think",
+          "revision": "d97e442d7cc678210054dbcc9b440894d62c89a4",
+          "validation_scores": {
+            "path": "lambda-2e-6/seed-0/val_scored.jsonl",
+            "sha256": "0f6a86b22d5c76144e6773ef1305e06d624b7a34102a81b99dd66b79040aea30",
+            "bytes": 11675738,
+            "rows": 1278,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb/osp-lam2e-6-s1-fb",
+          "directory": "lambda-2e-6/seed-1",
+          "seed": 1,
+          "role": "OSP full-grid",
+          "price": 2e-06,
+          "scoring_receipt": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb_ext74/osp-lam2e-6-s1-fb/summary.json",
+          "expected_sha256": "a1ccfcd11d70ccbb8dc3b068e0c3419f524c9f7962a6d6c6b5e7ae507c86f61f",
+          "checkpoint": "lambda-2e-6/seed-1/osp_best.pt",
+          "sha256": "a1ccfcd11d70ccbb8dc3b068e0c3419f524c9f7962a6d6c6b5e7ae507c86f61f",
+          "bytes": 1619174645,
+          "selected_epoch": {
+            "epoch": 6,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": null,
+            "value": -0.7045675942685939
+          },
+          "backbone": "allenai/Olmo-3-7B-Think",
+          "revision": "d97e442d7cc678210054dbcc9b440894d62c89a4",
+          "validation_scores": {
+            "path": "lambda-2e-6/seed-1/val_scored.jsonl",
+            "sha256": "9f68e60877409786be3a6f05ce8a65d9e9d17c3af77d34b0ff40a2f340e5a565",
+            "bytes": 11696790,
+            "rows": 1278,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb/osp-lam2e-6-s2-fb",
+          "directory": "lambda-2e-6/seed-2",
+          "seed": 2,
+          "role": "OSP full-grid",
+          "price": 2e-06,
+          "scoring_receipt": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb_ext74/osp-lam2e-6-s2-fb/summary.json",
+          "expected_sha256": "7b542bb965e92db16025cd9e4901b30d9b62ccdd099160edfa6c106e7364905a",
+          "checkpoint": "lambda-2e-6/seed-2/osp_best.pt",
+          "sha256": "7b542bb965e92db16025cd9e4901b30d9b62ccdd099160edfa6c106e7364905a",
+          "bytes": 1619174645,
+          "selected_epoch": {
+            "epoch": 6,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": null,
+            "value": -0.6867875856039856
+          },
+          "backbone": "allenai/Olmo-3-7B-Think",
+          "revision": "d97e442d7cc678210054dbcc9b440894d62c89a4",
+          "validation_scores": {
+            "path": "lambda-2e-6/seed-2/val_scored.jsonl",
+            "sha256": "d0a1d76419eca30145afe23b4ab05245b9d2928c836ea28fec9ee2738c848450",
+            "bytes": 11668818,
+            "rows": 1278,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb/osp-lam5e-6-s0-fb",
+          "directory": "lambda-5e-6/seed-0",
+          "seed": 0,
+          "role": "OSP full-grid",
+          "price": 5e-06,
+          "scoring_receipt": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb_ext74/osp-lam5e-6-s0-fb/summary.json",
+          "expected_sha256": "60cf73d04c1e0dd31207e4ee22fdb30c587e4cc15687264b18ccab1861862f82",
+          "checkpoint": "lambda-5e-6/seed-0/osp_best.pt",
+          "sha256": "60cf73d04c1e0dd31207e4ee22fdb30c587e4cc15687264b18ccab1861862f82",
+          "bytes": 1619174645,
+          "selected_epoch": {
+            "epoch": 5,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": null,
+            "value": -0.6483817399193056
+          },
+          "backbone": "allenai/Olmo-3-7B-Think",
+          "revision": "d97e442d7cc678210054dbcc9b440894d62c89a4",
+          "validation_scores": {
+            "path": "lambda-5e-6/seed-0/val_scored.jsonl",
+            "sha256": "0c3ed220921de9b2bd1f265068ddc38ec6dcfea9a49d96d5a8463f12fb871c96",
+            "bytes": 11647624,
+            "rows": 1278,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb/osp-lam5e-6-s1-fb",
+          "directory": "lambda-5e-6/seed-1",
+          "seed": 1,
+          "role": "OSP full-grid",
+          "price": 5e-06,
+          "scoring_receipt": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb_ext74/osp-lam5e-6-s1-fb/summary.json",
+          "expected_sha256": "3324b31f432581b89bd9ff8196fe814c17d9143987a5e209f59730ebd9129e0c",
+          "checkpoint": "lambda-5e-6/seed-1/osp_best.pt",
+          "sha256": "3324b31f432581b89bd9ff8196fe814c17d9143987a5e209f59730ebd9129e0c",
+          "bytes": 1619174645,
+          "selected_epoch": {
+            "epoch": 6,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": null,
+            "value": -0.6518679390018675
+          },
+          "backbone": "allenai/Olmo-3-7B-Think",
+          "revision": "d97e442d7cc678210054dbcc9b440894d62c89a4",
+          "validation_scores": {
+            "path": "lambda-5e-6/seed-1/val_scored.jsonl",
+            "sha256": "440c821fcefdd25c7e75f42c0e9106117155715de38e1898d15b3bd02b04b597",
+            "bytes": 11636538,
+            "rows": 1278,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb/osp-lam5e-6-s2-fb",
+          "directory": "lambda-5e-6/seed-2",
+          "seed": 2,
+          "role": "OSP full-grid",
+          "price": 5e-06,
+          "scoring_receipt": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb_ext74/osp-lam5e-6-s2-fb/summary.json",
+          "expected_sha256": "a060951b2f8ab9d0f112d22ecc9833ec73b7d64db75795696cf425976e028e3e",
+          "checkpoint": "lambda-5e-6/seed-2/osp_best.pt",
+          "sha256": "a060951b2f8ab9d0f112d22ecc9833ec73b7d64db75795696cf425976e028e3e",
+          "bytes": 1619174645,
+          "selected_epoch": {
+            "epoch": 6,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": null,
+            "value": -0.6523111234528358
+          },
+          "backbone": "allenai/Olmo-3-7B-Think",
+          "revision": "d97e442d7cc678210054dbcc9b440894d62c89a4",
+          "validation_scores": {
+            "path": "lambda-5e-6/seed-2/val_scored.jsonl",
+            "sha256": "551a17a1b26bb5f51773d3255529f763eedba5dc29588fce7ba67785bfd43846",
+            "bytes": 11652824,
+            "rows": 1278,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb/osp-lam1e-5-s0-fb",
+          "directory": "lambda-1e-5/seed-0",
+          "seed": 0,
+          "role": "OSP full-grid",
+          "price": 1e-05,
+          "scoring_receipt": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb_ext74/osp-lam1e-5-s0-fb/summary.json",
+          "expected_sha256": "b7674ced32429d53e9bda6d8fce6fe0eec99327e503208c52f0abc4692b6cf67",
+          "checkpoint": "lambda-1e-5/seed-0/osp_best.pt",
+          "sha256": "b7674ced32429d53e9bda6d8fce6fe0eec99327e503208c52f0abc4692b6cf67",
+          "bytes": 1619174645,
+          "selected_epoch": {
+            "epoch": 5,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": null,
+            "value": -0.6169933831123912
+          },
+          "backbone": "allenai/Olmo-3-7B-Think",
+          "revision": "d97e442d7cc678210054dbcc9b440894d62c89a4",
+          "validation_scores": {
+            "path": "lambda-1e-5/seed-0/val_scored.jsonl",
+            "sha256": "8388281b853c72a9ba22f237b4ed4b6ea31256942bc4a4cfce6314505683721d",
+            "bytes": 11550146,
+            "rows": 1278,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb/osp-lam1e-5-s1-fb",
+          "directory": "lambda-1e-5/seed-1",
+          "seed": 1,
+          "role": "OSP full-grid",
+          "price": 1e-05,
+          "scoring_receipt": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb_ext74/osp-lam1e-5-s1-fb/summary.json",
+          "expected_sha256": "e00fa28d2e8f66f2a557d5a8eb8189a2aac8e627c00a3a2bbd2141ec09eacece",
+          "checkpoint": "lambda-1e-5/seed-1/osp_best.pt",
+          "sha256": "e00fa28d2e8f66f2a557d5a8eb8189a2aac8e627c00a3a2bbd2141ec09eacece",
+          "bytes": 1619174645,
+          "selected_epoch": {
+            "epoch": 6,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": null,
+            "value": -0.6320257071283222
+          },
+          "backbone": "allenai/Olmo-3-7B-Think",
+          "revision": "d97e442d7cc678210054dbcc9b440894d62c89a4",
+          "validation_scores": {
+            "path": "lambda-1e-5/seed-1/val_scored.jsonl",
+            "sha256": "a446ef031898b6f20a8d4666247b5f2f84b90d7b4031aa89327201edf6ebe37b",
+            "bytes": 11654516,
+            "rows": 1278,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb/osp-lam1e-5-s2-fb",
+          "directory": "lambda-1e-5/seed-2",
+          "seed": 2,
+          "role": "OSP full-grid",
+          "price": 1e-05,
+          "scoring_receipt": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb_ext74/osp-lam1e-5-s2-fb/summary.json",
+          "expected_sha256": "815cd191cb973fcfee455f6b4e4a1e5acdcdc4953a451ce8a126645020c4967a",
+          "checkpoint": "lambda-1e-5/seed-2/osp_best.pt",
+          "sha256": "815cd191cb973fcfee455f6b4e4a1e5acdcdc4953a451ce8a126645020c4967a",
+          "bytes": 1619174645,
+          "selected_epoch": {
+            "epoch": 5,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": null,
+            "value": -0.6347919812772849
+          },
+          "backbone": "allenai/Olmo-3-7B-Think",
+          "revision": "d97e442d7cc678210054dbcc9b440894d62c89a4",
+          "validation_scores": {
+            "path": "lambda-1e-5/seed-2/val_scored.jsonl",
+            "sha256": "1e494913a779ecc36c4b021fbf8d890688c3619445ddc55ff1b945733159f934",
+            "bytes": 11597808,
+            "rows": 1278,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb/osp-lam2e-5-s0-fb",
+          "directory": "lambda-2e-5/seed-0",
+          "seed": 0,
+          "role": "OSP full-grid",
+          "price": 2e-05,
+          "scoring_receipt": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb_ext74/osp-lam2e-5-s0-fb/summary.json",
+          "expected_sha256": "3801940325cc451c834cdccb5da2460607c8f40514ae6b52e6293e1662e9468a",
+          "checkpoint": "lambda-2e-5/seed-0/osp_best.pt",
+          "sha256": "3801940325cc451c834cdccb5da2460607c8f40514ae6b52e6293e1662e9468a",
+          "bytes": 1619174645,
+          "selected_epoch": {
+            "epoch": 4,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": 6,
+            "value": -0.5730022685864652
+          },
+          "backbone": "allenai/Olmo-3-7B-Think",
+          "revision": "d97e442d7cc678210054dbcc9b440894d62c89a4",
+          "validation_scores": {
+            "path": "lambda-2e-5/seed-0/val_scored.jsonl",
+            "sha256": "b74f14cdd3388bc03dad993f7e5c1f9e930b46d375e4dd445ccf6bc0af1ebbac",
+            "bytes": 11569378,
+            "rows": 1278,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb/osp-lam2e-5-s1-fb",
+          "directory": "lambda-2e-5/seed-1",
+          "seed": 1,
+          "role": "OSP full-grid",
+          "price": 2e-05,
+          "scoring_receipt": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb_ext74/osp-lam2e-5-s1-fb/summary.json",
+          "expected_sha256": "06293b61381feaf47440b9ea8dad1af1d8f622f1f53b65a68b58d30d1b97f3a5",
+          "checkpoint": "lambda-2e-5/seed-1/osp_best.pt",
+          "sha256": "06293b61381feaf47440b9ea8dad1af1d8f622f1f53b65a68b58d30d1b97f3a5",
+          "bytes": 1619174645,
+          "selected_epoch": {
+            "epoch": 6,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": null,
+            "value": -0.545244804319688
+          },
+          "backbone": "allenai/Olmo-3-7B-Think",
+          "revision": "d97e442d7cc678210054dbcc9b440894d62c89a4",
+          "validation_scores": {
+            "path": "lambda-2e-5/seed-1/val_scored.jsonl",
+            "sha256": "c2686900c519663d26b471a72a405a0a7fa07112fe3a1e13f9c20a4ba5b69c44",
+            "bytes": 11538450,
+            "rows": 1278,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb/osp-lam2e-5-s2-fb",
+          "directory": "lambda-2e-5/seed-2",
+          "seed": 2,
+          "role": "OSP full-grid",
+          "price": 2e-05,
+          "scoring_receipt": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb_ext74/osp-lam2e-5-s2-fb/summary.json",
+          "expected_sha256": "681fc94ba90032085ad6f020ab00ccf4a48c97927ae1b8962982d9647775e5c2",
+          "checkpoint": "lambda-2e-5/seed-2/osp_best.pt",
+          "sha256": "681fc94ba90032085ad6f020ab00ccf4a48c97927ae1b8962982d9647775e5c2",
+          "bytes": 1619174645,
+          "selected_epoch": {
+            "epoch": 5,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": null,
+            "value": -0.5725396988630668
+          },
+          "backbone": "allenai/Olmo-3-7B-Think",
+          "revision": "d97e442d7cc678210054dbcc9b440894d62c89a4",
+          "validation_scores": {
+            "path": "lambda-2e-5/seed-2/val_scored.jsonl",
+            "sha256": "848bbebe1db38c80803de0b43c0a5a2bd6586246fd58583b709f51002066e1b0",
+            "bytes": 11539952,
+            "rows": 1278,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb/osp-lam4e-5-s0-fb",
+          "directory": "lambda-4e-5/seed-0",
+          "seed": 0,
+          "role": "OSP full-grid",
+          "price": 4e-05,
+          "scoring_receipt": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb_ext74/osp-lam4e-5-s0-fb/summary.json",
+          "expected_sha256": "62d95e96ab031b563655e95a55f880519ee908a94337cbe5b3daa51806acf228",
+          "checkpoint": "lambda-4e-5/seed-0/osp_best.pt",
+          "sha256": "62d95e96ab031b563655e95a55f880519ee908a94337cbe5b3daa51806acf228",
+          "bytes": 1619174645,
+          "selected_epoch": {
+            "epoch": 4,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": 6,
+            "value": -0.4632665821801469
+          },
+          "backbone": "allenai/Olmo-3-7B-Think",
+          "revision": "d97e442d7cc678210054dbcc9b440894d62c89a4",
+          "validation_scores": {
+            "path": "lambda-4e-5/seed-0/val_scored.jsonl",
+            "sha256": "8a7f365a0d2729a7ddd7501dfe9bfe1df02621e4767ab379970e98c8a372e527",
+            "bytes": 11459244,
+            "rows": 1278,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb/osp-lam4e-5-s1-fb",
+          "directory": "lambda-4e-5/seed-1",
+          "seed": 1,
+          "role": "OSP full-grid",
+          "price": 4e-05,
+          "scoring_receipt": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb_ext74/osp-lam4e-5-s1-fb/summary.json",
+          "expected_sha256": "a7716dfb7cb3a9a3306233967c20cc54a822e560560cd4e9813955da8dcac4c4",
+          "checkpoint": "lambda-4e-5/seed-1/osp_best.pt",
+          "sha256": "a7716dfb7cb3a9a3306233967c20cc54a822e560560cd4e9813955da8dcac4c4",
+          "bytes": 1619174645,
+          "selected_epoch": {
+            "epoch": 6,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": null,
+            "value": -0.4832750374483344
+          },
+          "backbone": "allenai/Olmo-3-7B-Think",
+          "revision": "d97e442d7cc678210054dbcc9b440894d62c89a4",
+          "validation_scores": {
+            "path": "lambda-4e-5/seed-1/val_scored.jsonl",
+            "sha256": "fea81f6c9c017e0b976452e1ac2e7652b5dcdbc2c72fc608b86ebf07a1a4084b",
+            "bytes": 11457616,
+            "rows": 1278,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb/osp-lam4e-5-s2-fb",
+          "directory": "lambda-4e-5/seed-2",
+          "seed": 2,
+          "role": "OSP full-grid",
+          "price": 4e-05,
+          "scoring_receipt": "/cluster/scratch/jingni/iclr/olmo3_rep/runs/s3_full_fb_ext74/osp-lam4e-5-s2-fb/summary.json",
+          "expected_sha256": "e3434a04d462dd81815564152841c09b1f4d42d075538ae712b04c0487080966",
+          "checkpoint": "lambda-4e-5/seed-2/osp_best.pt",
+          "sha256": "e3434a04d462dd81815564152841c09b1f4d42d075538ae712b04c0487080966",
+          "bytes": 1619174645,
+          "selected_epoch": {
+            "epoch": 5,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": null,
+            "value": -0.48677138899670147
+          },
+          "backbone": "allenai/Olmo-3-7B-Think",
+          "revision": "d97e442d7cc678210054dbcc9b440894d62c89a4",
+          "validation_scores": {
+            "path": "lambda-4e-5/seed-2/val_scored.jsonl",
+            "sha256": "29eb806d9e8dec74856a46ccdd2010054c7d89a224d92758a99ad0b4ccaadd79",
+            "bytes": 11500322,
+            "rows": 1278,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        }
+      ],
+      "additional_assets": [],
+      "hub_revision": "6468baa472ec3deb340e26b12fb6d3c42427a442",
+      "url": "https://huggingface.co/JingweiNi/OSP-OLMo-3-7B-Think",
+      "verification": {
+        "public_anonymous_access": true,
+        "checkpoint_lfs_hashes": 15,
+        "validation_lfs_hashes": 15,
+        "small_metadata_hashes": 61,
+        "method": "Anonymous Hub metadata and downloaded metadata SHA256 comparison"
+      }
+    },
+    {
+      "schema": "belt-checkpoints/v1",
+      "repository": "JingweiNi/OSP1-OLMo-3-7B-Think",
+      "method": "OSP",
+      "backbone": "allenai/Olmo-3-7B-Think",
+      "revision": "d97e442d7cc678210054dbcc9b440894d62c89a4",
+      "checkpoints": [
+        {
+          "source": "/iopsstor/scratch/cscs/jni/olmo3_rep/runs/s3/osp-single-lam2e-5",
+          "directory": "archived-osp1/seed-0",
+          "seed": 0,
+          "role": "Archived OSP-1",
+          "price": 2e-05,
+          "checkpoint": "archived-osp1/seed-0/osp_best.pt",
+          "sha256": "c96df44639fa413d8ffebfe1593bb3ac7c726239403844e896830e796a11b04d",
+          "bytes": 1619174645,
+          "selected_epoch": {
+            "epoch": 4,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": 6,
+            "value": -0.5701526585537853
+          },
+          "backbone": "allenai/Olmo-3-7B-Think",
+          "revision": "d97e442d7cc678210054dbcc9b440894d62c89a4",
+          "validation_scores": {
+            "path": "archived-osp1/seed-0/val_scored.jsonl",
+            "sha256": "984deb39006f3f1b8016212e5c478e03c08675e2b6b1c155673fc6bcd8ae4f52",
+            "bytes": 11542053,
+            "rows": 1278,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/iopsstor/scratch/cscs/jni/olmo3_rep/runs/s3/osp-single-lam2e-5-s1",
+          "directory": "archived-osp1/seed-1",
+          "seed": 1,
+          "role": "Archived OSP-1",
+          "price": 2e-05,
+          "checkpoint": "archived-osp1/seed-1/osp_best.pt",
+          "sha256": "1d324ae77047baaebd7d027cc014b9aca1e59988fb021e49cd62bd9751ea2a5a",
+          "bytes": 1619174645,
+          "selected_epoch": {
+            "epoch": 6,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": null,
+            "value": -0.561181946575251
+          },
+          "backbone": "allenai/Olmo-3-7B-Think",
+          "revision": "d97e442d7cc678210054dbcc9b440894d62c89a4",
+          "validation_scores": {
+            "path": "archived-osp1/seed-1/val_scored.jsonl",
+            "sha256": "08b6de9a53fc1176d5ba6bb0ee7a5953637c4dd1979228b5f3970673c2e721a6",
+            "bytes": 11536347,
+            "rows": 1278,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        },
+        {
+          "source": "/iopsstor/scratch/cscs/jni/olmo3_rep/runs/s3/osp-single-lam2e-5-s2",
+          "directory": "archived-osp1/seed-2",
+          "seed": 2,
+          "role": "Archived OSP-1",
+          "price": 2e-05,
+          "checkpoint": "archived-osp1/seed-2/osp_best.pt",
+          "sha256": "1c507173dbc5a383eb59cf4555369e24d18bd58beabef3f8560ad6728b3ad457",
+          "bytes": 1619174645,
+          "selected_epoch": {
+            "epoch": 6,
+            "floor": 4,
+            "n_eligible_epochs": 3,
+            "n_history_epochs": 7,
+            "stopped_at": null,
+            "value": -0.5795448515622502
+          },
+          "backbone": "allenai/Olmo-3-7B-Think",
+          "revision": "d97e442d7cc678210054dbcc9b440894d62c89a4",
+          "validation_scores": {
+            "path": "archived-osp1/seed-2/val_scored.jsonl",
+            "sha256": "56820c233d0ebfb68118e8cd1f9891e8ea73207a65d90e9725c741d036e11a2d",
+            "bytes": 11548759,
+            "rows": 1278,
+            "role": "Original source-run validation scores required by iclr_score_pool"
+          }
+        }
+      ],
+      "additional_assets": [],
+      "hub_revision": "6a0896d0d2ec37e017110901672e6d30a79bc1a9",
+      "url": "https://huggingface.co/JingweiNi/OSP1-OLMo-3-7B-Think",
+      "verification": {
+        "public_anonymous_access": true,
+        "checkpoint_lfs_hashes": 3,
+        "validation_lfs_hashes": 3,
+        "small_metadata_hashes": 12,
+        "method": "Anonymous Hub metadata and downloaded metadata SHA256 comparison"
+      }
+    }
+  ]
+}

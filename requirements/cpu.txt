@@ -1,0 +1,2 @@
+# The unittest source checks use only Python's standard library (Python >=3.10).
+# No GPU packages are needed.

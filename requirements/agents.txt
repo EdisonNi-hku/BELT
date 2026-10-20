@@ -1,0 +1,4 @@
+# In addition to the OLMo GPU runtime and NumPy. ScienceWorld also needs JDK 21.
+alfworld==0.4.2
+textworld==1.7.0
+scienceworld==1.2.3
