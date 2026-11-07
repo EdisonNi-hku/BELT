@@ -1,6 +1,6 @@
 # Additional imports of the captured BELT training/runtime code.
 # Install alongside the appropriate backbone's archived GPU stack.
-# These ranges describe import requirements, not a historical full environment lock.
+# These ranges describe import requirements, not a full environment lock.
 numpy>=1.24,<3
 datasets>=3,<5
 huggingface-hub>=0.30,<1

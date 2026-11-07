@@ -106,7 +106,7 @@ The [reproduction recipes](docs/RECIPES.md) give backbone revisions, environment
 
 | Stage | Recipe |
 | :--- | :--- |
-| Generate and grade math trajectories | [Trajectories and natural grading](docs/RECIPES.md#mathematics-trajectories-and-corrected-natural-grading) |
+| Generate and grade math trajectories | [Trajectories and natural grading](docs/RECIPES.md#mathematics-trajectories-and-natural-completion-answer-elicitation) |
 | Train and score the four-belief probe | [BELT probes and scoring](docs/RECIPES.md#belt-probes-and-scoring) |
 | Fit stopping policies; train OSP baselines | [Policy fitting and OSP](docs/RECIPES.md#policy-fitting-and-osp) |
 | Transfer to code | [LiveCodeBench](docs/RECIPES.md#livecodebench-transfer) |
@@ -129,7 +129,7 @@ The Qwen3-1.7B and OLMo-3-7B-Think experiments used different code revisions. Ea
 | `scripts/source_variants/` | Revision snapshots for Qwen policy fitting and the OLMo training, scoring and policy paths |
 | `scripts/olmo_lcb/` | LiveCodeBench bank assembly and readings |
 | `scripts/olmo_alfworld/` | Shared agent trajectory tree, environments, calibration and readings |
-| `scripts/belt_ext/d53/` | Natural-completion cost correction used by policy fitting |
+| `scripts/belt_ext/d53/` | Elicited-answer token cost installer used by policy fitting |
 | `vendor/` | Native-thinking UHead/ReProbe runtime |
 | `provenance/` | Source revisions and file hashes for code and checkpoints |
 | `docs/` | Recipes, checkpoint guide and asset list |

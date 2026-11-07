@@ -15,7 +15,7 @@
           "source": "/iopsstor/scratch/cscs/jni/runs/two_belief/targets_fb/qall-c8-s0-tq+v+r+stability-fb",
           "directory": "seed-0",
           "seed": 0,
-          "role": "ReProbe-initialized BELT; corrected-label fb; recommended for Qwen H-R",
+          "role": "ReProbe-initialized BELT; recommended for Qwen H-R",
           "expected_sha256": "a14b5b5e527ce71ff9a90e167ae7251238da983dc5ed9e37f5e27d891d0829cd",
           "scoring_receipt": "/iopsstor/scratch/cscs/jni/runs/belt_ext/valscore_fb/3539122/lane3/math_ood_report/summary.json",
           "checkpoint": "seed-0/s1_best.pt",
@@ -36,7 +36,7 @@
           "source": "/iopsstor/scratch/cscs/jni/runs/two_belief/targets_fb/qall-c8-s1-tq+v+r+stability-fb",
           "directory": "seed-1",
           "seed": 1,
-          "role": "ReProbe-initialized BELT; corrected-label fb; recommended for Qwen H-R",
+          "role": "ReProbe-initialized BELT; recommended for Qwen H-R",
           "expected_sha256": "3cc8e145032e87fa1278e703ea477a1f9b8ea783217ecc7a6b67194a7e973dd0",
           "scoring_receipt": "/iopsstor/scratch/cscs/jni/runs/belt_ext/valscore_fb/d22_ctrl12/lane1/math_ood_report/summary.json",
           "checkpoint": "seed-1/s1_best.pt",
@@ -57,7 +57,7 @@
           "source": "/iopsstor/scratch/cscs/jni/runs/two_belief/targets_fb/qall-c8-s2-tq+v+r+stability-fb",
           "directory": "seed-2",
           "seed": 2,
-          "role": "ReProbe-initialized BELT; corrected-label fb; recommended for Qwen H-R",
+          "role": "ReProbe-initialized BELT; recommended for Qwen H-R",
           "expected_sha256": "3170461de8a2846fe1cca751ba13972da0a698ec83a3f9c49fd8c088a6258615",
           "scoring_receipt": "/iopsstor/scratch/cscs/jni/runs/belt_ext/valscore_fb/d22_ctrl12/lane2/math_ood_report/summary.json",
           "checkpoint": "seed-2/s1_best.pt",
@@ -107,7 +107,7 @@
           "bytes": 3898
         }
       ],
-      "hub_revision": "1ccc94337a9672dee94f79bc3c3a98a2f994220b",
+      "hub_revision": "664179ee7431db265c6fed041790d66381f1b1d6",
       "url": "https://huggingface.co/JingweiNi/BELT-Qwen3-1.7B-ReProbeInit",
       "verification": {
         "public_anonymous_access": true,
@@ -199,7 +199,7 @@
           "bytes": 216
         }
       ],
-      "hub_revision": "15d1c4d82b13b47f3aaaa403687cf88d91d8052f",
+      "hub_revision": "0e41063d1d6d7e06c417f6a4675640719e620b92",
       "url": "https://huggingface.co/JingweiNi/BELT-Qwen3-1.7B",
       "verification": {
         "public_anonymous_access": true,
@@ -278,7 +278,7 @@
         }
       ],
       "additional_assets": [],
-      "hub_revision": "338da37f4b859a6583f4d5a079f9c929db3066e7",
+      "hub_revision": "00d017f4cf9523624d49a2aacdb8273a73a82857",
       "url": "https://huggingface.co/JingweiNi/BELT-OLMo-3-7B-Think",
       "verification": {
         "public_anonymous_access": true,
@@ -717,7 +717,7 @@
         }
       ],
       "additional_assets": [],
-      "hub_revision": "6aa1a5b7c0bd8c9069676a2928b8e909f7cfc73e",
+      "hub_revision": "e12a7dbb3933c9b58a557f3a5a18c440cca9b390",
       "url": "https://huggingface.co/JingweiNi/OSP-Qwen3-1.7B",
       "verification": {
         "public_anonymous_access": true,
@@ -1171,7 +1171,7 @@
         }
       ],
       "additional_assets": [],
-      "hub_revision": "6468baa472ec3deb340e26b12fb6d3c42427a442",
+      "hub_revision": "2b3db6721ed7615cb7f3c5ca6847f4d210d99941",
       "url": "https://huggingface.co/JingweiNi/OSP-OLMo-3-7B-Think",
       "verification": {
         "public_anonymous_access": true,
@@ -1271,7 +1271,7 @@
         }
       ],
       "additional_assets": [],
-      "hub_revision": "6a0896d0d2ec37e017110901672e6d30a79bc1a9",
+      "hub_revision": "56bcf6d88dd657a74dd6c5cebccefde04e129f2f",
       "url": "https://huggingface.co/JingweiNi/OSP1-OLMo-3-7B-Think",
       "verification": {
         "public_anonymous_access": true,

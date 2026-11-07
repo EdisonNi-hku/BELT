@@ -9,9 +9,9 @@ The release publishes **42 original trained checkpoints** across six public Hugg
 | OLMo BELT, layer-18 scalar-mix reader | [BELT-OLMo-3-7B-Think](https://huggingface.co/JingweiNi/BELT-OLMo-3-7B-Think) | 3 | `seed-{0,1,2}/` |
 | Qwen full OSP | [OSP-Qwen3-1.7B](https://huggingface.co/JingweiNi/OSP-Qwen3-1.7B) | 15 | `lambda-{price}/seed-{0,1,2}/` |
 | OLMo full OSP | [OSP-OLMo-3-7B-Think](https://huggingface.co/JingweiNi/OSP-OLMo-3-7B-Think) | 15 | `lambda-{price}/seed-{0,1,2}/` |
-| OLMo archived OSP-1 | [OSP1-OLMo-3-7B-Think](https://huggingface.co/JingweiNi/OSP1-OLMo-3-7B-Think) | 3 | `archived-osp1/seed-{0,1,2}/` |
+| OLMo OSP-1 | [OSP1-OLMo-3-7B-Think](https://huggingface.co/JingweiNi/OSP1-OLMo-3-7B-Think) | 3 | `archived-osp1/seed-{0,1,2}/` |
 
-The full OSP grid uses training prices `2e-6`, `5e-6`, `1e-5`, `2e-5`, and `4e-5`. Qwen OSP-1 uses the full-grid `1e-5` files. OLMo OSP-1 uses the separately archived `2e-5` files, trained on the original labels with evaluation-side natural-completion corrections. It is **a different artifact** from the corrected-label full-grid `2e-5` checkpoint.
+The full OSP grid uses training prices `2e-6`, `5e-6`, `1e-5`, `2e-5`, and `4e-5`. Qwen OSP-1 uses the full-grid `1e-5` files. OLMo OSP-1 uses the separately published `2e-5` files, trained on labels without natural-completion answer elicitation and evaluated under the shared grading. It is **a different artifact** from the full-grid `2e-5` checkpoint.
 
 ## Recommended Qwen H-R checkpoint
 
@@ -33,7 +33,7 @@ Use a separate download environment so that installing the Hub client does not c
 python3 -m venv .venv-download
 .venv-download/bin/python -m pip install huggingface_hub
 .venv-download/bin/hf download JingweiNi/BELT-Qwen3-1.7B-ReProbeInit \
-  --revision 1ccc94337a9672dee94f79bc3c3a98a2f994220b \
+  --revision 664179ee7431db265c6fed041790d66381f1b1d6 \
   --local-dir checkpoints/BELT-Qwen3-1.7B-ReProbeInit
 (
   cd checkpoints/BELT-Qwen3-1.7B-ReProbeInit
@@ -73,7 +73,7 @@ Each run directory contains the original files:
 | --- | --- |
 | `s1_best.pt` or `osp_best.pt` | Selected trained reader/readout or OSP top-two-block checkpoint |
 | `summary.json` | Original trainer configuration, target names, selection history and provenance |
-| `val_scored.jsonl` | Original validation scores; the historical scorer requires this file and copies it to the output for calibration |
+| `val_scored.jsonl` | Original validation scores; the scorer requires this file and copies it to the output for calibration |
 | Execution/migration JSON, when present | Original distributed-execution or resume metadata |
 | `scoring_receipt.json`, in the ReProbe-init package | Original scorer provenance recording the evaluated checkpoint SHA256 |
 | `ARTIFACT.json` | Publication mapping, hashes and byte counts |
@@ -86,7 +86,7 @@ Pass the **run directory**, rather than the `.pt` file, as `--source-run`. Prese
 | Qwen OSP | Root `rl_controller` scorer | No external BELT head/template |
 | OLMo BELT | `scripts/source_variants/olmo_belt/` | Saved self-contained scalar-mix reader |
 | OLMo full OSP | `scripts/source_variants/olmo_osp_full/` | Run configuration reconstructs the top-two-block reader |
-| OLMo archived OSP-1 | `scripts/source_variants/olmo_osp_archived/` | Archived scorer; keep its recorded numerical contract |
+| OLMo OSP-1 | `scripts/source_variants/olmo_osp_archived/` | OSP-1 scorer; keep its recorded numerical contract |
 
 Follow [source selection and scoring commands](RECIPES.md). Snapshot commands must run from the selected snapshot directory with that directory first on `PYTHONPATH`. The checkpoint package supplies source-run files; it does not supply evaluation trajectories or questions.
 
