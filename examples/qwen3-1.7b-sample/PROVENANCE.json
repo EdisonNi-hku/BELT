@@ -1,0 +1,118 @@
+{
+ "schema": "belt-sample-provenance/v1",
+ "created": "2026-11-12",
+ "code": {
+  "repository": "EdisonNi-hku/BELT",
+  "commit": "20c7c2c0d8d4a52f9edc6116fe4cf7a301e9e554",
+  "sample_tools": "tools/build_sample.py (root Qwen runtime), tools/policy_check.py (scripts/source_variants/qwen_policy under scripts/belt_ext/d53/run_patched.py), run as one CPU job",
+  "environment": "Python 3.10.14, NumPy 2.2.6, PyTorch 2.7.0+cu126, Transformers 4.52.4, CPU"
+ },
+ "backbone": {
+  "model": "Qwen/Qwen3-1.7B",
+  "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "prompt_contract": "qwen3-1.7b-native-thinking-v1"
+ },
+ "probe": {
+  "repository": "JingweiNi/BELT-Qwen3-1.7B-ReProbeInit",
+  "revision": "664179ee7431db265c6fed041790d66381f1b1d6",
+  "run": "seed-0",
+  "s1_best_sha256": "a14b5b5e527ce71ff9a90e167ae7251238da983dc5ed9e37f5e27d891d0829cd",
+  "reader_template_weights_sha256": "9fc317cdd6f1bf1b44abd02e1248a10875d78827df92209dec39c216cecfea8e",
+  "reader_template_config_sha256": "bef9144e4db96c9380f110dc3eac07492787b324e44015ce179adf6b46d03225"
+ },
+ "inputs": [
+  {
+   "role": "report trajectories with forced-answer probes",
+   "sha256": "9e65c6f803e05d38e44a67d55e31ac5fb86703ddda1df330e117b392c60b2fbd",
+   "declared_by": "scoring summary and representation dump source"
+  },
+  {
+   "role": "report question roster",
+   "sha256": "27f2165a204ddaa41459cd39c42bdbd296bc5a551803bd88b66857ca73e63749"
+  },
+  {
+   "role": "answer-elicited report bank",
+   "sha256": "de1bca841f2254429648610ea8a7d37fb5fa40e9263a28318727ec3daf42b164"
+  },
+  {
+   "role": "natural-answer elicitation records",
+   "path": "/iopsstor/scratch/cscs/jni/runs/belt_ext/natural_fallback/3537690/math_ood_report/natural_fallback.jsonl",
+   "sha256": "acfdb5653e5f9814027c84b39c3371530d501f322914272685bcb864a3e6e5e6"
+  },
+  {
+   "role": "scored report pool (beliefs at every probe)",
+   "path": "/iopsstor/scratch/cscs/jni/runs/belt_ext/valscore_fb/3539122/lane3/math_ood_report/select_scored.jsonl",
+   "sha256": "755c71b05f4b9b66d60533a748115067488695e2136629261fb7ee1f7cc77656"
+  },
+  {
+   "role": "scoring summary (the package's seed-0 scoring receipt)",
+   "path": "/iopsstor/scratch/cscs/jni/runs/belt_ext/valscore_fb/3539122/lane3/math_ood_report/summary.json",
+   "sha256": "ffdab15bc2a2bcb622735d2e1fa8a54d18c9f40d0c6727d2e602ad91901994b6"
+  },
+  {
+   "role": "report representation dump",
+   "file": "LB_H.f16",
+   "sha256": "d788dcfbe21d4e6f2bb326dc6bd5fc809321cb76091edb76cd36342c3e67a48c"
+  },
+  {
+   "role": "report representation index",
+   "file": "LB_H.index.jsonl",
+   "sha256": "9b7cd49b5c44915ef2873fc7e174a35412c08b297d28adb9c431e7e25ae62de1"
+  },
+  {
+   "role": "validation scores after answer elicitation (policy-fit input)",
+   "sha256": "a3a2115549791eb89de8ab9b7ed550e1d8b9906d566c75d58d90cc7ea8b39dc0"
+  },
+  {
+   "role": "validation representation dump (policy-fit input)",
+   "sha256": "d78d21d485af8d3211ff2bd49de445fb92fc7659622abe53db37aef95f5d8f8c"
+  },
+  {
+   "role": "fitted B-R cell",
+   "sha256": "c2b034c3e68e93926c922cb46d6e5de3dc57cb4e2e7139ad9b90c1bceb6bb9da"
+  },
+  {
+   "role": "fitted H-R cell",
+   "sha256": "2e46afcddda79b511b661492e95367d1ff036a455cc5ab2702197a542c04a46d"
+  }
+ ],
+ "production": {
+  "trajectories": "vLLM 0.9.0.1 on RTX 4090 (ETH Euler); temperature 0.6, top-p 0.95, top-k 20; 12,000-token thinking budget",
+  "natural_answer_elicitation": "CSCS GH200 node, the cluster container's vLLM build, code commit aa3910bb2072916aa69a6c123d0f3bb12c76ecda",
+  "scoring": {
+   "device": "NVIDIA GH200 120GB",
+   "commit": "773c0a148f0f767c608fa25a523b8d9498959d8e"
+  },
+  "policy_fitting": "CPU, float64 L-BFGS, producer scripts/source_variants/qwen_policy (source revision 521553ad), elicited-answer cost installer scripts/belt_ext/d53"
+ },
+ "selection": {
+  "rule": "for each required category set, the question whose chains cover it, source='math500' if any, with minimum sha256('belt-sample-v1:'+qkey); all chains of each chosen question",
+  "questions": [
+   "9af952f6e9b3917d",
+   "755d3f8b497323d6"
+  ]
+ },
+ "checks": {
+  "field_agreement": "trajectory, scored-pool and elicited-bank rows agree on gold, outcome, blocks, thinking_tokens, block_ends, query_points and probes for all 16 chains; completion_ids identical in the trajectory file and the elicited bank",
+  "prefix_boundaries": "every probe prefix decodes to text ending in a blank line",
+  "representation_rows": "one finite float16 row of width 768 per probe for every chain",
+  "public_b_normalisation": "B-R mean and std recomputed from the checkpoint package's seed-0/val_scored.jsonl (SHA256 6e1b9ce1aab4ea71fd8613b40c01ace686c9f9e4422ba24e74a52121d1adfc2b) match policies/belt_b_r_seed0.json exactly (maximum absolute difference 0.0)",
+  "scoring_copies": "the Euler copies read here are byte-identical to the Clariden files named in the package's seed-0 scoring receipt (scored pool, summary, report and validation representation dumps)",
+  "build_log_issues": {},
+  "policy_normalisation": {
+   "method": "mean and std recomputed from the policy-fit questions with the fitting code; all 17 stored rows of each policy re-read on the development split and on the pool the cell was written for",
+   "result": {
+    "LB_QVRS": {
+     "rows": 17,
+     "max_abs_diff_pool_readout": 0.0,
+     "max_abs_diff_dev_readout": 0.0
+    },
+    "LB_H": {
+     "rows": 17,
+     "max_abs_diff_pool_readout": 0.0,
+     "max_abs_diff_dev_readout": 0.0
+    }
+   }
+  }
+ }
+}

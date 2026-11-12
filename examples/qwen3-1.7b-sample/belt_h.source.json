@@ -1,0 +1,94 @@
+{
+ "schema": "frozen-repr-dump/v1",
+ "arm": "LB_H",
+ "width": 768,
+ "dim": 768,
+ "dtype": "float16",
+ "order": "C",
+ "all_ends": false,
+ "rows": "probe positions only (reprs[_probe_pos])",
+ "index_fields": [
+  "qkey",
+  "rep",
+  "n_probes",
+  "offset"
+ ],
+ "offset_unit": "bytes",
+ "chains": "/iopsstor/scratch/cscs/jni/pool_report/math_ood_report/chains.jsonl",
+ "chains_sha256": "9e65c6f803e05d38e44a67d55e31ac5fb86703ddda1df330e117b392c60b2fbd",
+ "source_run": "/iopsstor/scratch/cscs/jni/runs/two_belief/targets_fb/qall-c8-s0-tq+v+r+stability-fb",
+ "head_mode": "targets",
+ "readout_out_features": 4,
+ "checkpoint_sha256": "a14b5b5e527ce71ff9a90e167ae7251238da983dc5ed9e37f5e27d891d0829cd",
+ "reader_weights_sha256": "9fc317cdd6f1bf1b44abd02e1248a10875d78827df92209dec39c216cecfea8e",
+ "commit": "773c0a148f0f767c608fa25a523b8d9498959d8e",
+ "commit_dirty": false,
+ "parent_dump_sha256": "d788dcfbe21d4e6f2bb326dc6bd5fc809321cb76091edb76cd36342c3e67a48c",
+ "parent_index_sha256": "9b7cd49b5c44915ef2873fc7e174a35412c08b297d28adb9c431e7e25ae62de1",
+ "subset": [
+  [
+   "9af952f6e9b3917d",
+   0
+  ],
+  [
+   "9af952f6e9b3917d",
+   1
+  ],
+  [
+   "9af952f6e9b3917d",
+   2
+  ],
+  [
+   "9af952f6e9b3917d",
+   3
+  ],
+  [
+   "9af952f6e9b3917d",
+   4
+  ],
+  [
+   "9af952f6e9b3917d",
+   5
+  ],
+  [
+   "9af952f6e9b3917d",
+   6
+  ],
+  [
+   "9af952f6e9b3917d",
+   7
+  ],
+  [
+   "755d3f8b497323d6",
+   0
+  ],
+  [
+   "755d3f8b497323d6",
+   1
+  ],
+  [
+   "755d3f8b497323d6",
+   2
+  ],
+  [
+   "755d3f8b497323d6",
+   3
+  ],
+  [
+   "755d3f8b497323d6",
+   4
+  ],
+  [
+   "755d3f8b497323d6",
+   5
+  ],
+  [
+   "755d3f8b497323d6",
+   6
+  ],
+  [
+   "755d3f8b497323d6",
+   7
+  ]
+ ]
+}

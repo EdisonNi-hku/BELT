@@ -10,4 +10,5 @@
 | Exact Qwen reader template | Included in both Qwen BELT packages | `reader-template/` holds the initialization configuration and weights |
 | Backbone weights and tokenizers | Hugging Face | `Qwen/Qwen3-1.7B` and `allenai/Olmo-3-7B-Think` at the revisions pinned in [RECIPES.md](RECIPES.md) |
 | Question manifests, trajectory banks, fitted stopping policies, unit-test bundles | Not included | Rebuild them with the recipes |
+| Qwen3-1.7B trajectory sample | `examples/qwen3-1.7b-sample/` | 16 report-split trajectories with token IDs, probe boundaries, beliefs, H rows, outcomes and costs, plus the seed-0 ReProbe-initialized B-R/H-R policies and normalization |
 | Qwen threshold-expansion producer `x16_thresholds.py` | Not included | |

@@ -131,6 +131,7 @@ The Qwen3-1.7B and OLMo-3-7B-Think experiments used different code revisions. Ea
 | `scripts/olmo_alfworld/` | Shared agent trajectory tree, environments, calibration and readings |
 | `scripts/belt_ext/d53/` | Elicited-answer token cost installer used by policy fitting |
 | `vendor/` | Native-thinking UHead/ReProbe runtime |
+| `examples/qwen3-1.7b-sample/` | Small Qwen3-1.7B sample linking token IDs, probe boundaries, beliefs, representations, outcomes, costs and fitted policies |
 | `provenance/` | Source revisions and file hashes for code and checkpoints |
 | `docs/` | Recipes, checkpoint guide and asset list |
 
